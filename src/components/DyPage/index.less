@@ -1,0 +1,76 @@
+.dy-page {
+  &-card {
+    margin: 10px 10px;
+    background: #fff;
+  }
+
+  .dy-static-block{
+    height: 45px;
+    overflow: hidden;
+  }
+
+  .dy-sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 5px 20px;
+    transition: top .3s ease-in-out;
+    top: 0;
+    &.fix {
+      position: fixed;
+      background: #fff;
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 10px;
+      top: 64px;
+      left: 200px;
+      right: 0;
+      z-index: 99;
+      box-shadow: 0 1px 4px rgba(0,21,41,.08);
+      display: flex;
+      align-items: center;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #e1e1e1;
+        transform: scaleY(0.5);
+      }
+    }
+
+    .ant-breadcrumb {
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-bottom: 0;
+      line-height: 2;
+    }
+
+    &-common-btn {
+      text-align: right;
+      flex: 1;
+
+      button:not(:first-of-type) {
+        margin-left: 20px;
+      }
+    }
+    .pathbox {
+      display: flex;
+      align-items: center;
+      margin-left: 10px; 
+      color: #bbb;
+      span {
+        border-radius: 20px;
+        color: #1890ff;
+        padding:0 8px;
+        cursor: pointer;
+        margin-left:5px
+      }
+    }
+  }
+
+  
+}

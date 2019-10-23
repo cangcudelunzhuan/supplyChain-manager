@@ -1,0 +1,106 @@
+.login {
+  height: 100vh;
+  background-image: url('../../assets/login-bg.png');
+  background-size: cover;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+
+  &-block {
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0px 30px 54px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    &-left {
+      position: relative;
+      float: left;
+      width: 63%;
+      height: 100%;
+      background-image: url('../../assets/login-form-bg.png');
+      background-size: 100% 100%;
+      border-radius: 5px 0 0 5px;
+
+      &-logo {
+        margin-top: 100px;
+        text-align: center;
+        img{
+          width: 70px;
+        }
+      }
+
+      &-title {
+        text-align: center;
+        font-size: 32px;
+        font-family: PingFangSC-Regular;;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 15px;
+      }
+
+      &-subtitle {
+        text-align: center;
+        font-size: 15px;
+        font-family: PingFangSC-Thin;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      &-bottom-logo {
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        &-big{
+          font-size:16px;
+          font-family:STSongti-SC-Regular;
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          text-shadow:0px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        &-small{
+          font-size:12px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+
+    &-right {
+      float: left;
+      width: 37%;
+      height: 100%;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0 5px 5px 0;
+
+      &-title {
+        font-size: 21px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+        text-align: center;
+        margin-top: 100px;
+      }
+      &-form{
+        padding: 40px;
+        &-code{
+          position: absolute;
+          right: 2px;
+          top: -10px;
+          width: 75px;
+          height: 36px;
+          background: #e1e1e1;
+          cursor: pointer;
+        }
+        &-button{
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

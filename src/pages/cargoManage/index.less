@@ -1,0 +1,39 @@
+.authList {
+    padding: 30px;
+    .ant-list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .authAction {
+            margin-left: 36px;
+            color: rgba(0,0,0,0.45);
+            span+span{
+                margin-left: 20px;
+                position: relative
+            }
+            span+span::after{
+                position: absolute;
+                content: '';
+                height: 80%;
+                width: 1px;
+                background: #dfdfdf;
+                top: 10%;
+                left: -10px;
+            }
+        }
+    }
+}
+.business-lease{
+    .a-action-btn{
+      a{
+        margin-right:5px;
+      }
+    }
+}
+.block-title-num{
+    text-align: right;
+    font-size:16px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(34,34,34,1);
+}

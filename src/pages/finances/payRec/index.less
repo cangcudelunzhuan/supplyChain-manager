@@ -1,0 +1,39 @@
+.ant-table-fixed-left{
+    .deleterow{
+        td:first-child{
+            position: relative;
+            z-index: 0;
+            ::before{
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 60px solid #737272;
+                border-right: 60px solid transparent;
+                left: 0;
+                top: 0;
+                opacity: 0.6;
+                z-index: -1;
+            }
+            ::after{
+                position: absolute;
+                content: '不通过';
+                left: 0;
+                top: 10px;
+                color: #000;
+                transform:rotate(-45deg);
+                z-index: -1;
+            }
+        }
+       
+    }
+}
+.ant-table-row-hover.deleterow td {
+    background: #eaeaea!important;
+}
+.ant-table-fixed-left, .ant-table-scroll, .ant-table-fixed-right{
+    .deleterow{
+        background: #eaeaea;
+        opacity: 0.5;
+    }
+}
