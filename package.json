@@ -36,7 +36,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-import": "^1.11.0",
     "china-division": "^2.2.0",
     "classnames": "^2.2.6",
